@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2674191820091481192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58,6 +58,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a3c2600fbe9abb479e229e4424ee6c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnBallGoalEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5975496174789028239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,7 +1051,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5975496176159461091}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7, z: 0}
+  m_LocalPosition: {x: 0, y: 4.16, z: 0}
   m_LocalScale: {x: 0.2, y: 8, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1328,7 +1343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5975496176589190230}
   m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 1.75, y: 13, z: 1.75}
+  m_LocalPosition: {x: 1.75, y: 10, z: 1.75}
   m_LocalScale: {x: 0.1, y: 2, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
