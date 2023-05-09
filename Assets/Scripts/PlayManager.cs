@@ -1,16 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayManager : MonoBehaviour
 {
     [SerializeField] BallController ballController;
     [SerializeField] CameraController camController;
+    [SerializeField] GameObject finishWindow;
+    [SerializeField] TMP_Text finishText;
+    [SerializeField] TMP_Text shootCountText;
 
     bool isBallOutside;
     bool isBallTeleporting;
     bool isGoal;
     Vector3 lastBallPosition;
+
+    private void OnEnable()
+    {
+        ballController.onBallShooted.AddListener(UpdateShootCount);
+    }
+
+    private void OnDisable() 
+    {
+        ballController.onBallShooted.RemoveListener(UpdateShootCount);
+    }
 
     private void Update() 
     {
@@ -44,6 +58,9 @@ public class PlayManager : MonoBehaviour
     {
         isGoal = true;
         ballController.enabled = false;
+
+        finishWindow.gameObject.SetActive(true);
+        finishText.text = "Finished!!!\n" + "Shoot Count : " + ballController.ShootCount;
     }
 
     public void TeleportBallLastPosition()
@@ -61,5 +78,10 @@ public class PlayManager : MonoBehaviour
         ballController.enabled = true;
         isBallOutside = false;
         isBallTeleporting = false;
+    }
+
+    public void UpdateShootCount(int shootCount)
+    {
+        shootCountText.text = shootCount.ToString();
     }
 }
