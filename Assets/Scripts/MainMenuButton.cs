@@ -9,4 +9,14 @@ public class MainMenuButton : MonoBehaviour
     {
         SceneManager.LoadScene("Main Menu");
     }
+
+    public void LevelSelector()
+    {
+        SceneManager.LoadScene("Level Selector");
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }

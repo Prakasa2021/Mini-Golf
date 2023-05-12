@@ -132,6 +132,21 @@ MonoBehaviour:
   force: 50
   aimLine: {fileID: 0}
   aimWorld: {fileID: 0}
+  onBallHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5038962763188973926, guid: 83660888caa21d947992bab8e8e26fd1, type: 3}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 9567568c8923ab145a52264136c5699c, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onBallShooted:
     m_PersistentCalls:
       m_Calls: []

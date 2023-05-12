@@ -10,6 +10,7 @@ public class BallController : MonoBehaviour, IPointerDownHandler
     [SerializeField] float force;
     [SerializeField] LineRenderer aimLine;
     [SerializeField] Transform aimWorld;
+    [SerializeField] UnityEvent onBallHit;
     // [SerializeField] LayerMask layerMask;
 
     bool shoot;
@@ -51,7 +52,7 @@ public class BallController : MonoBehaviour, IPointerDownHandler
                 // var aimDirection = new Vector3(aimDirection.x, 0, aimDirection.y);
                 // aimDirection = Camera.main.transform.localToWorldMatrix * aimDirection;
                 // aimWorld.transform.forward = aimDirection.normalized;
-
+                onBallHit.Invoke();
                 ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 plane.Raycast(ray, out var distance);
                 forceDirection = this.transform.position - ray.GetPoint(distance);
