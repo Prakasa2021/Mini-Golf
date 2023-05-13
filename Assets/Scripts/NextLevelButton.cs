@@ -26,10 +26,5 @@ public class NextLevelButton : MonoBehaviour
         int nextLevel = currentLevel + 1;
 
         SceneManager.LoadScene("Level " + nextLevel);
-
-        if(nextLevel > PlayerPrefs.GetInt("levelAt"))
-        {
-            PlayerPrefs.SetInt("levelAt", nextLevel);
-        }
     }
 }
