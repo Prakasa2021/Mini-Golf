@@ -10,6 +10,11 @@ public class MainMenuButton : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     public void LevelSelector()
     {
         SceneManager.LoadScene("Level Selector");
