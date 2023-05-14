@@ -2827,6 +2827,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gameplay Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5342039440696176863, guid: 1a4be7f6c700c104793f43004d41b66d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5449459749416550022, guid: 1a4be7f6c700c104793f43004d41b66d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -3618,6 +3622,22 @@ PrefabInstance:
     - target: {fileID: 5975496175904794968, guid: 16e2b2a243e1cbc4f94b741619c42ba2, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951227806305672896, guid: 16e2b2a243e1cbc4f94b741619c42ba2, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1241320795}
+    - target: {fileID: 6951227806305672896, guid: 16e2b2a243e1cbc4f94b741619c42ba2, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBallEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951227806305672896, guid: 16e2b2a243e1cbc4f94b741619c42ba2, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951227806305672896, guid: 16e2b2a243e1cbc4f94b741619c42ba2, type: 3}
+      propertyPath: OnBallGoalEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16e2b2a243e1cbc4f94b741619c42ba2, type: 3}

@@ -192,7 +192,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15060231}
-  m_LocalRotation: {x: 0.3006394, y: -0.000000016410379, z: 0.0000000051729154, w: 0.9537379}
+  m_LocalRotation: {x: 0.3006394, y: 0.000000016410379, z: -0.0000000051729154, w: 0.9537379}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -545,7 +545,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213507725}
-  m_LocalRotation: {x: 0.26579648, y: 0.00000001658745, z: -0.000000004573395, w: 0.9640292}
+  m_LocalRotation: {x: 0.26579648, y: -0.000000016587457, z: 0.0000000045733968, w: 0.9640292}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3023,6 +3023,10 @@ PrefabInstance:
     - target: {fileID: 5342039440696176863, guid: 1a4be7f6c700c104793f43004d41b66d, type: 3}
       propertyPath: m_Name
       value: Gameplay Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5342039440696176863, guid: 1a4be7f6c700c104793f43004d41b66d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5449459749416550022, guid: 1a4be7f6c700c104793f43004d41b66d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
